@@ -6,8 +6,27 @@
 /*   By: clouden <clouden@student.42madrid.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/06 13:51:28 by clouden           #+#    #+#             */
-/*   Updated: 2026/05/06 16:12:29 by clouden          ###   ########.fr       */
+/*   Updated: 2026/05/06 19:57:21 by clouden          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "Zombie.hpp"
+using std::cout;
+using std::string;
 
+Zombie::Zombie() :
+	name_("Foo")
+{}
+
+Zombie::~Zombie()
+{}
+
+Zombie::Zombie(string name)
+{
+	name_ = name;
+}
+
+void	Zombie::announce(void)
+{
+	cout << name_ << ": BraiiiiiiinnnzzzZ...\n";
+}
