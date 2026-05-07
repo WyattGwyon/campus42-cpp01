@@ -6,7 +6,7 @@
 #    By: clouden <clouden@student.42madrid.com>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/05/06 13:46:13 by clouden           #+#    #+#              #
-#    Updated: 2026/05/06 18:34:57 by clouden          ###   ########.fr        #
+#    Updated: 2026/05/07 18:37:00 by clouden          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,9 @@ CXXFLAGS	=	-Wall -Wextra -Werror -std=c++98
 
 NAME 		=	zombies
 SRCS		=	main.cpp\
-				Zombie.cpp
+				Zombie.cpp\
+				newZombie.cpp\
+				randomChump.cpp
 
 
 OBJS		=	$(SRCS:%.cpp=%.o)

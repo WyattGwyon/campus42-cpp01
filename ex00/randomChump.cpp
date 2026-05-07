@@ -6,7 +6,7 @@
 /*   By: clouden <clouden@student.42madrid.com      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/06 19:53:27 by clouden           #+#    #+#             */
-/*   Updated: 2026/05/06 19:57:21 by clouden          ###   ########.fr       */
+/*   Updated: 2026/05/07 19:03:26 by clouden          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@ using std::string;
 
 void	randomChump(string name)
 {
-	Zombie*	chump.newZombie("Chump");
-	chump.announce();
+	Zombie*	chump = newZombie(name);
+	chump->announce();
 	delete chump;
 }
 
