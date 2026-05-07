@@ -6,7 +6,7 @@
 #    By: clouden <clouden@student.42madrid.com>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/05/06 22:27:44 by clouden           #+#    #+#              #
-#    Updated: 2026/05/07 17:48:10 by clouden          ###   ########.fr        #
+#    Updated: 2026/05/07 21:40:26 by clouden          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,8 @@ CXXFLAGS	=	-Wall -Wextra -Werror -std=c++98
 NAME 		= 	moarbrainz
 
 SRCS		=	main.cpp \
-				Zombie.cpp
+				Zombie.cpp\
+				zombieHorde.cpp
 
 OBJS		= 	$(SRCS:%.cpp=%.o)
 

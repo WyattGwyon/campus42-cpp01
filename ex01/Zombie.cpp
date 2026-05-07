@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Zombies.cpp                                        :+:      :+:    :+:   */
+/*   Zombie.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: clouden <clouden@student.42madrid.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/07 17:48:58 by clouden           #+#    #+#             */
-/*   Updated: 2026/05/07 20:06:59 by clouden          ###   ########.fr       */
+/*   Updated: 2026/05/07 20:50:47 by clouden          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,10 @@ using std::cout;
 using std::string;
 
 Zombie::Zombie() :
-	name_ = "Foo"
+	name_("Foo")
+{}
+
+Zombie::~Zombie()
 {}
 
 Zombie::Zombie(string name)

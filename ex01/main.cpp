@@ -1,27 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Zombies.hpp                                        :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: clouden <clouden@student.42madrid.com>     +#+  +:+       +#+        */
+/*   By: clouden <clouden@student.42madrid.com      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/05/07 17:51:45 by clouden           #+#    #+#             */
-/*   Updated: 2026/05/07 20:06:59 by clouden          ###   ########.fr       */
+/*   Created: 2026/05/07 20:42:28 by clouden           #+#    #+#             */
+/*   Updated: 2026/05/07 21:56:40 by clouden          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#pragma once
-#include <iostream>
+#include "Zombie.hpp"
 
-class Zombie()
+int	main(void)
 {
-private:
-	std::string	name_;
-public:
-	Zombie();
-	~Zombie();
-
-	Zombie(std::string name);
-	void	setName(std::string name);
-	void	announce();
+	Zombie*	horde = zombieHorde(5, "Chucky");
+	delete[] horde;
 }
