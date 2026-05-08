@@ -6,12 +6,13 @@
 /*   By: clouden <clouden@student.42madrid.com      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/08 15:39:05 by clouden           #+#    #+#             */
-/*   Updated: 2026/05/08 18:22:32 by clouden          ###   ########.fr       */
+/*   Updated: 2026/05/08 21:57:42 by clouden          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef		WEAPON_H
 # define	WEAPON_H
+# include	<iostream>
 
 class	Weapon()
 {
@@ -20,11 +21,11 @@ private:
 
 public:
 	Weapon();
-	Weapon(std::string name);
+	Weapon(std::string type);
 	~Weapon();
 
-	std::string	getType();
-	void		setType();
+	std::string	getType() const;
+	void		setType(std::string type);
 }
 
 # endif
