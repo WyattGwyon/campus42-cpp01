@@ -6,7 +6,7 @@
 /*   By: clouden <clouden@student.42madrid.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/12 22:51:40 by clouden           #+#    #+#             */
-/*   Updated: 2026/05/13 13:22:23 by clouden          ###   ########.fr       */
+/*   Updated: 2026/05/13 18:17:46 by clouden          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,8 @@
 # define REPLACE_HPP
 # include <iostream>
 # include <fstream>
+# include <cstdlib>
 
-int	replace(std::string filename, std::string s1, std::string s2);
+void	replace(std::string filename, std::string s1, std::string s2);
 
 # endif
