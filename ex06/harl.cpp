@@ -6,7 +6,7 @@
 /*   By: clouden <clouden@student.42madrid.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/13 19:07:33 by clouden           #+#    #+#             */
-/*   Updated: 2026/05/13 21:21:34 by clouden          ###   ########.fr       */
+/*   Updated: 2026/05/13 23:19:06 by clouden          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,28 +54,59 @@ void	Harl::complain(std::string level)
 		"WARNING",
 		"ERROR"
 	};
-	void (Harl::*funcs[4])();
-	funcs[0] = &Harl::debug;
-	funcs[1] = &Harl::info;
-	funcs[2] = &Harl::warning;
-	funcs[3] = &Harl::error;
-	
-	int	i;
-	i = 0;
-	while (i < 4)
+	for (int i = 0; i < 4; i++)
 	{
 		if (levels[i] == level)
 		{
-			while (i < 4)
+			switch(i)
 			{
-				std::cout << "[ " << levels[i] << " ]\n";
-				(this->*funcs[i])();
-				std::cout << "\n";
-				i++;
+				case 0:
+					std::cout << "[ DEBUG ]\n";
+					debug();
+					std::cout << "\n";
+					/* fall through */
+				case 1:
+					std::cout << "[ INFO ]\n";
+					info();
+					std::cout << "\n";
+					/* fall through */
+				case 2:
+					std::cout << "[ WARNING ]\n";
+					warning();
+					std::cout << "\n";
+					/* fall through */
+				case 3:
+					std::cout << "[ ERROR ]\n";
+					error();
+					std::cout << "\n";
+					/* fall through */
 			}
 			return;
 		}
-		i++;
 	}
 	std::cout << "[ Probably complaining about insignificant problems ]\n";
+//	void (Harl::*funcs[4])();
+//	funcs[0] = &Harl::debug;
+//	funcs[1] = &Harl::info;
+//	funcs[2] = &Harl::warning;
+//	funcs[3] = &Harl::error;
+//	
+//	int	i;
+//	i = 0;
+//	while (i < 4)
+//	{
+//		if (levels[i] == level)
+//		{
+//			while (i < 4)
+//			{
+//				std::cout << "[ " << levels[i] << " ]\n";
+//				(this->*funcs[i])();
+//				std::cout << "\n";
+//				i++;
+//			}
+//			return;
+//		}
+//		i++;
+//	}
+//	std::cout << "[ Probably complaining about insignificant problems ]\n";
 }
