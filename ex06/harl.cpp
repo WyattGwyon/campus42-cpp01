@@ -6,7 +6,7 @@
 /*   By: clouden <clouden@student.42madrid.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/13 19:07:33 by clouden           #+#    #+#             */
-/*   Updated: 2026/05/13 23:19:06 by clouden          ###   ########.fr       */
+/*   Updated: 2026/05/14 14:29:25 by clouden          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,28 +85,4 @@ void	Harl::complain(std::string level)
 		}
 	}
 	std::cout << "[ Probably complaining about insignificant problems ]\n";
-//	void (Harl::*funcs[4])();
-//	funcs[0] = &Harl::debug;
-//	funcs[1] = &Harl::info;
-//	funcs[2] = &Harl::warning;
-//	funcs[3] = &Harl::error;
-//	
-//	int	i;
-//	i = 0;
-//	while (i < 4)
-//	{
-//		if (levels[i] == level)
-//		{
-//			while (i < 4)
-//			{
-//				std::cout << "[ " << levels[i] << " ]\n";
-//				(this->*funcs[i])();
-//				std::cout << "\n";
-//				i++;
-//			}
-//			return;
-//		}
-//		i++;
-//	}
-//	std::cout << "[ Probably complaining about insignificant problems ]\n";
 }
