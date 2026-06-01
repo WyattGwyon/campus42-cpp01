@@ -6,7 +6,7 @@
 /*   By: clouden <clouden@student.42madrid.com      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/06 18:13:12 by clouden           #+#    #+#             */
-/*   Updated: 2026/05/07 19:12:30 by clouden          ###   ########.fr       */
+/*   Updated: 2026/06/01 19:33:42 by clouden          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,13 @@
 
 int	main(void)
 {
-	Zombie	foo;
+	Zombie	foo("Foo");
 	Zombie	chuck("Chuck");
 
 	foo.announce();
 	chuck.announce();
 	Zombie* fred = newZombie("Fred");
+	fred->announce();
 	delete fred;
 	randomChump("Chump");
 }

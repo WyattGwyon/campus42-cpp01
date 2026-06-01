@@ -6,7 +6,7 @@
 /*   By: clouden <clouden@student.42madrid.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/06 13:51:28 by clouden           #+#    #+#             */
-/*   Updated: 2026/05/06 19:57:21 by clouden          ###   ########.fr       */
+/*   Updated: 2026/06/01 19:28:16 by clouden          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,9 @@ Zombie::Zombie() :
 {}
 
 Zombie::~Zombie()
-{}
+{
+	cout << name_ << " has been destroyed!\n";
+}
 
 Zombie::Zombie(string name)
 {
